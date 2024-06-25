@@ -1,6 +1,6 @@
 [project]
 name = "llm-embed-hazo"
-version = "0.0.0a0"
+version = "0.1.0"
 description = "Dummy llm plugin for demonstration purposes"
 readme = "README.md"
 authors = [{name = "Florents Tselai"}]
@@ -9,9 +9,7 @@ classifiers = [
     "License :: OSI Approved :: Apache Software License"
 ]
 dependencies = [
-    "llm",
-    "transformers",
-    "torch",
+    "llm"
 ]
 
 [project.urls]
