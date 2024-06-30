@@ -8,7 +8,12 @@ def test_embed_hazo():
     floats = model.embed("hello world")
     assert len(floats) == 16
     assert all(isinstance(f, float) for f in floats)
-    assert floats ==  [5.0, 5.0] + [0.0] * 14
+    assert floats == [5.0, 5.0] + [0.0] * 14
+
+    assert model.supports_binary
+    model.embed(b"hello world")
+
+
 
 def test_hazo_embed_multi(tmpdir):
     db_path = str(tmpdir / "test.db")

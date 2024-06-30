@@ -14,6 +14,7 @@ def register_embedding_models(register):
 
 
 class HazoEmbeddingModel(llm.EmbeddingModel):
+    supports_binary = True
     def __init__(self, model_id):
         self.model_id = model_id
         self._model = None
@@ -30,3 +31,4 @@ class HazoEmbeddingModel(llm.EmbeddingModel):
             # Pad with 0 up to 16 words
             embedding += [0.0] * (16 - len(embedding))
             yield embedding
+
