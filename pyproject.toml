@@ -1,6 +1,6 @@
 [project]
 name = "llm-embed-hazo"
-version = "0.2.0"
+version = "0.2.1"
 description = "Dummy llm plugin for demonstration purposes"
 readme = "README.md"
 authors = [{name = "Florents Tselai"}]
